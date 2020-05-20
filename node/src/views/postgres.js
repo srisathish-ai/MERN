@@ -40,12 +40,14 @@ const update = async(req,res) => {
         .then(() => res.status(200).json(`Date Updated`))
         .catch(err => res.status(400).json(err))
 }
+
 const del = async(req,res) => {
     var sql = `DELETE from newdata WHERE id = ${req.params.id}`
     await client.query(sql)
         .then(() => res.status(200).json(`Date Deleted`))
         .catch(err => res.status(400).json(err))
 }
+
 module.exports ={
     read,
     create,
