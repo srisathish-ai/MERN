@@ -1,9 +1,9 @@
-const express = require('./node_modules/express'); 
-const morgan = require('./node_modules/morgan')
-const cors = require('./node_modules/cors')
+const express = require('express'); 
+const morgan = require('morgan')
+const cors = require('cors')
 const router = require('./views/router')
 var app = express()
-require('./node_modules/dotenv').config()
+require('dotenv').config()
 const port = process.env.APP_PORT
 const host = process.env.APP_HOST
 

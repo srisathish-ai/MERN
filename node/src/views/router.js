@@ -1,5 +1,5 @@
 'use strict';
-const router = require('./node_modules/express').Router()
+const router = require('express').Router()
 const mongodb = require('./mongodb')
 const mysql = require('./mysql')
 const postgres = require('./postgres')
